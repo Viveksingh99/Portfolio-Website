@@ -35,51 +35,51 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Graduated Aryabhatta Knowledge University",
+    location: "Patna, Bihar",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I graduated after 2 months of studying. I immediately found a job as a Front-end developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "React Developer",
+    location: "jaipur, Rajasthan",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I worked as a React developer for 1 years. I also upskilled to the Skills.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Software Engineer",
+    location: "Gurgaon",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a Software developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "ThrivelyCare",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "This project is designed to allow the clients to find professional health service providers/therapists near their location. The patients can book appointments for either Online consultation (Video call) or In-person meetings for their respective needs.",
+    tags: ["React", "Next.js", "Tailwind CSS"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Saloon",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "This project to find professional Saloon service providers near their location. The user can book appointments respective needs",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Fitstreet",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "It is a fitness system where users can track their fitness using an application and website.",
+    tags: ["React", "Next.js", "Tailwind"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -91,9 +91,12 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Next.js",
-  "Git",
   "Tailwind",
+  "Material Ui",
+  "Bootstrap",
   "Redux",
-  "Apollo",
-  "Framer Motion",
+  "Redux Toolkit",
+  "Git",
+  "Swagger",
+  "Postman"
 ] as const;
