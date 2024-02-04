@@ -62,23 +62,23 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "ThrivelyCare",
+    title: "heartyyfresh",
     description:
-      "This project is designed to allow the clients to find professional health service providers/therapists near their location. The patients can book appointments for either Online consultation (Video call) or In-person meetings for their respective needs.",
+      "Heartyy Fresh is the largest online supermarket for Indian groceries in the USA. We sculpted a comprehensive online platform that would help them deliver all the grocery goodness.",
     tags: ["React", "Next.js", "Tailwind CSS"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "Saloon",
+    title: "zoniraz",
     description:
-      "This project to find professional Saloon service providers near their location. The user can book appointments respective needs",
+      "Zoniraz is the largest online market for Indian Jewellery. Zoniraz Jewel is one of the leading Jewellery manufacturer, wholesaler, and exporter in the international Jewels market.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Fitstreet",
+    title: "fabindia",
     description:
-      "It is a fitness system where users can track their fitness using an application and website.",
+      "Fabindia is the largest online supermarket for Indian. Fabindia is India's largest private platform for products that are made from traditional techniques, skills and hand-based processes.",
     tags: ["React", "Next.js", "Tailwind"],
     imageUrl: wordanalyticsImg,
   },
