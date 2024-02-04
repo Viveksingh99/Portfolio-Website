@@ -35,26 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated Aryabhatta Knowledge University",
+    title: "I graduated from Aryabhatta Knowledge University.",
     location: "Patna, Bihar",
     description:
-      "I graduated after 2 months of studying. I immediately found a job as a Front-end developer.",
+      "I am a highly motivated individual with a strong educational foundation in computer science, holding a Bachelor of Computer Application (BCA) degree from Aryabhatta Knowledge University. Throughout my academic journey, I developed a comprehensive understanding of key concepts in programming, software development, and information technology. My coursework equipped me with practical skills in database management, system analysis, and web development. I am passionate about leveraging my technical knowledge to contribute effectively in the dynamic field of computer science and technology.",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
   {
     title: "React Developer",
+    // company: "IMG Global Infotech Private Limited",
     location: "jaipur, Rajasthan",
     description:
-      "I worked as a React developer for 1 years. I also upskilled to the Skills.",
-    icon: React.createElement(CgWorkAlt),
+      "I worked as a React developer for 1 year and upskilled to enhance my skills.",
+    icon: React.createElement(FaReact),
     date: "2022 - 2023",
   },
   {
     title: "Software Engineer",
+    // company: "Radiansys Inc.",
     location: "Gurgaon",
     description:
-      "I'm now a Software developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind. I'm open to full-time opportunities.",
+      "I am a Software Engineer specializing in React, Next.js, and Tailwind CSS. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
