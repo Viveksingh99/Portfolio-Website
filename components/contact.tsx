@@ -36,9 +36,9 @@ export default function Contact() {
 
       <div className="mt-8 w-full max-w-3xl mx-auto grid gap-6">
         <div className="p-6 rounded-xl bg-white/70 dark:bg-gray-900/60 border border-white/20 dark:border-black/20 shadow text-center">
-          <h4 className="font-semibold text-lg mb-2">Let's build something</h4>
+          <h4 className="font-semibold text-lg mb-2">Let&apos;s build something</h4>
           <p className="text-sm text-gray-600 dark:text-gray-300">
-            Tell me about your project, timeline, and goals. I'll follow up with
+            Tell me about your project, timeline, and goals. I&apos;ll follow up with
             next steps.
           </p>
 
@@ -93,7 +93,7 @@ export default function Contact() {
           />
 
           <div className="mt-4 flex flex-col items-center gap-3">
-            <div className="text-sm text-gray-500 dark:text-gray-400 text-center">I'll reply within a few days</div>
+            <div className="text-sm text-gray-500 dark:text-gray-400 text-center">I&apos;ll reply within a few days</div>
             <SubmitBtn />
           </div>
         </form>

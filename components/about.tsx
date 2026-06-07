@@ -42,8 +42,8 @@ export default function About() {
 
             <p className="mb-4 text-base sm:text-lg">
               <span className="italic">I enjoy solving problems</span> and
-              turning ideas into polished products. I'm constantly learning new
-              technologies and improving my craft. I'm currently open to{" "}
+              turning ideas into polished products. I&apos;m constantly learning new
+              technologies and improving my craft. I&apos;m currently open to{" "}
               <span className="font-medium">full-time frontend roles</span>{" "}
               where I can contribute and grow.
             </p>
