@@ -13,3 +13,18 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fallback background color for older browsers */
+body {
+  background-color: #f8fafc; /* Tailwind's gray-50 */
+}

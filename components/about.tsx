@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
@@ -11,36 +10,52 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
+      className="mt-12 sm:mt-20 mb-20 max-w-4xl mx-auto scroll-mt-28 px-4"
+      initial={{ opacity: 0, y: 80 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Computer Application</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
+      <div className="bg-white/60 dark:bg-gray-900/60 backdrop-blur-md rounded-2xl p-6 sm:p-10 shadow-lg border border-white/40 dark:border-black/40">
+        <h2 className="text-3xl font-medium capitalize mb-8 text-center">
+          About me{" "}
+        </h2>
 
-      <p>
-        <span className="italic">When I am not coding</span>, I enjoy playing
-        outdoor games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>.
-      </p>
+        <div className="mt-6 grid gap-6 sm:grid-cols-3 items-start">
+          <div className="flex items-center justify-center sm:justify-start">
+            <div className="w-28 h-28 rounded-xl bg-gradient-to-br from-indigo-50 to-pink-50 dark:from-indigo-800 dark:to-pink-800 flex items-center justify-center shadow-md border border-white/30">
+              <span className="text-4xl">💡</span>
+            </div>
+          </div>
+
+          <div className="sm:col-span-2 text-gray-700 dark:text-gray-300 leading-7">
+            <p className="mb-4 text-base sm:text-lg">
+              After graduating with a degree in{" "}
+              <span className="font-medium">Computer Application</span>, I
+              pursued my passion for programming and web development. I build
+              intuitive user interfaces and fast experiences using{" "}
+              <span className="font-medium">React</span> and{" "}
+              <span className="font-medium">Next.js</span>. I also work with{" "}
+              <span className="font-medium">TypeScript</span> and modern tools
+              like Prisma.
+            </p>
+
+            <p className="mb-4 text-base sm:text-lg">
+              <span className="italic">I enjoy solving problems</span> and
+              turning ideas into polished products. I'm constantly learning new
+              technologies and improving my craft. I'm currently open to{" "}
+              <span className="font-medium">full-time frontend roles</span>{" "}
+              where I can contribute and grow.
+            </p>
+
+            <p className="text-base sm:text-lg">
+              Outside of coding, I like playing outdoor games, watching movies,
+              and spending time with my dog. I value clear, accessible design
+              and enjoy collaborating with teams to build great products.
+            </p>
+          </div>
+        </div>
+      </div>
     </motion.section>
   );
 }

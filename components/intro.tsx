@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -18,100 +18,91 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-20 max-w-3xl mx-auto text-center sm:mb-0 scroll-mt-[100rem] px-4"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
+            transition={{ type: "spring", stiffness: 120, damping: 14 }}
           >
             <Image
               src="/my-photo.jpeg"
               alt="vivek portrait"
-              width="300"
-              height="300"
-              quality="95"
+              width={320}
+              height={320}
+              quality={90}
               priority={true}
-              className="h-25 w-25 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-28 w-28 sm:h-36 sm:w-36 md:h-44 md:w-44 rounded-full object-top object-cover border-[5px] border-white shadow-2xl dark:border-gray-800 bg-gray-100"
             />
           </motion.div>
-
           <motion.span
-            className="absolute bottom-5 right-10 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
+            className="absolute -bottom-2 right-2 text-3xl sm:text-4xl"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", stiffness: 120, delay: 0.12 }}
           >
             👋
           </motion.span>
         </div>
       </div>
-
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
+        className="mb-6 mt-6 px-4 text-3xl font-semibold leading-tight sm:text-5xl md:text-6xl"
+        initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I’m Vivek Singh.</span> I’m a <br/>
-        <span className="font-bold">Frontend developer</span> with{" "}
-        <span className="font-bold">2+ years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-500 font-extrabold">Hi, I’m Vivek Singh.</span>
+        <span className="block mt-3 text-gray-700 dark:text-gray-300 text-lg sm:text-xl font-medium">A Frontend developer building beautiful, accessible web apps with React & Next.js.</span>
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
+        className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-base sm:text-lg"
+        initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        transition={{ delay: 0.08 }}
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          aria-label="Contact"
+          className="inline-flex items-center gap-3 bg-indigo-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transform transition hover:scale-105 hover:-translate-y-0.5 active:scale-100"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          Contact Me
+          <BsArrowRight className="opacity-90" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/vivek-singh_CV.pdf"
+          className="inline-flex items-center gap-3 bg-white text-gray-800 px-5 py-3 rounded-full shadow-sm hover:shadow-md transform transition hover:scale-105 hover:-translate-y-0.5 border border-gray-200"
+          href="/Vivek_Singh_CV.pdf"
           download
+          aria-label="Download Resume"
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="text-lg" />
+          Resume
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="inline-flex items-center justify-center w-11 h-11 rounded-full shadow-sm hover:shadow-md transform transition hover:scale-105 hover:-translate-y-0.5 border border-gray-200 text-gray-700 dark:text-white"
           href="https://www.linkedin.com/in/vivek-singh99/"
           target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
         >
-          <BsLinkedin />
+          <BsLinkedin className="text-lg" />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          className="inline-flex items-center justify-center w-11 h-11 rounded-full shadow-sm hover:shadow-md transform transition hover:scale-105 hover:-translate-y-0.5 border border-gray-200 text-gray-700 dark:text-white text-[1.25rem]"
           href="https://github.com/Viveksingh99"
           target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
         >
-          <FaGithubSquare />
+          <FaGithub className="text-lg" />
         </a>
       </motion.div>
     </section>
